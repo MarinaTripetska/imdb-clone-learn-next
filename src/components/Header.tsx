@@ -6,6 +6,7 @@ import { BsInfoCircleFill } from "react-icons/bs";
 
 import { Navigation } from "@/globalTypes/navigation";
 import MenuItem from "./MenuItem";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 function Header() {
   return (
@@ -28,12 +29,16 @@ function Header() {
         </ul>
       </nav>
 
-      <Link href={Navigation.home} className="text-2xl">
-        <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">
-          IMDb
-        </span>
-        <span className="text-xl hidden  sm:inline ">Clone</span>
-      </Link>
+      <div className="flex items-center gap-4">
+        <DarkModeSwitch />
+
+        <Link href={Navigation.home} className="text-2xl">
+          <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">
+            IMDb
+          </span>
+          <span className="text-xl hidden  sm:inline ">Clone</span>
+        </Link>
+      </div>
     </header>
   );
 }
