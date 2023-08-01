@@ -20,7 +20,7 @@ const DarkModeSwitch = () => {
           <button
             type="button"
             onClick={() => setTheme("light")}
-            className="text-xl hover:text-amber-500"
+            className="text-xl hover:text-amber-500 transition-colors duration-300"
           >
             <MdLightMode />
           </button>
@@ -28,7 +28,7 @@ const DarkModeSwitch = () => {
           <button
             type="button"
             onClick={() => setTheme("dark")}
-            className="text-xl hover:text-amber-500"
+            className="text-xl hover:text-amber-500 transition-colors duration-300"
           >
             <BsFillMoonFill />
           </button>

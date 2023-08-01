@@ -10,7 +10,10 @@ interface Props {
 
 function MenuItem({ title, url, Icon }: Props) {
   return (
-    <Link href={url} className="uppercase  hover:text-amber-600">
+    <Link
+      href={url}
+      className="uppercase  hover:text-amber-600 transition-colors duration-300"
+    >
       <Icon className="text-2xl sm:hidden" />
       <p className="hidden sm:block py-2 text-sm">{title}</p>
     </Link>
